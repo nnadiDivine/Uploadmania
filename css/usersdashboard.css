@@ -1,0 +1,653 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background: var(--c6);
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inner-dashboard {
+  width: 20%;
+  height: 100vh;
+  background: var(--c5);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.inner-dashboard .dashboard {
+  text-align: center;
+}
+
+.inner-dashboard .dashboard .dashboard-pic {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.inner-dashboard .dashboard .dashboard-pic i {
+  font-size: 100px;
+  color: var(--c2);
+}
+
+.inner-dashboard .dashboard-icon {
+  display: inline-block;
+  margin: 10px 0 0 20px;
+  text-align: left;
+  width: 100%;
+}
+
+.inner-dashboard .dashboard-icon a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0;
+}
+
+.inner-dashboard .dashboard-icon a i {
+  margin: 0;
+  padding: 0;
+}
+
+.inner-dashboard .dashboard-icon a:hover {
+  background: var(--c4);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.inner-dashboard .dashboard-icon a .fas {
+  font-size: 25px;
+  color: var(--c2);
+}
+
+.inner-dashboard .dashboard-icon a .fab {
+  font-size: 25px;
+  color: var(--c2);
+}
+
+.inner-dashboard .dashboard-icon a .i {
+  font-size: 15px;
+  font-family: sans-serif;
+  font-style: inherit;
+  margin: 0px 0 0 15px;
+  font-weight: bold;
+}
+
+.inner-dashboard .dashboard-icon a .ie {
+  font-size: 15px;
+  font-family: sans-serif;
+  font-style: inherit;
+  margin: 0px 0 0 25px;
+  font-weight: bold;
+}
+
+.elements {
+  width: 80%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  height: 100vh;
+  background-image: url(../img/Sprinkle.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.elements nav {
+  background: var(--c5);
+  height: 10%;
+  -webkit-box-shadow: 8px 2px 8px 0 #000;
+          box-shadow: 8px 2px 8px 0 #000;
+}
+
+.elements nav h1 {
+  display: none;
+}
+
+.elements nav div {
+  margin-right: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.elements nav div .message {
+  float: right;
+}
+
+.elements nav div i {
+  font-size: 29px;
+  margin-right: 19px;
+  float: right;
+}
+
+.elements .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.elements .center .box2 {
+  display: none;
+}
+
+.elements .center .uploaded-div {
+  width: 90%;
+  height: 90%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00000000), to(#0aaaaaaa));
+  background: linear-gradient(#00000000, #0aaaaaaa);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  -webkit-box-shadow: 2px 2px 10px #000;
+          box-shadow: 2px 2px 10px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-Y: scroll;
+  overflow-X: hidden;
+}
+
+.elements .center .uploaded-div .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 10px;
+  border-bottom: 2px solid var(--c6);
+  position: -webkit-sticky;
+  position: sticky;
+  color: #fff;
+}
+
+.elements .center .uploaded-div .title span {
+  background: var(--c5);
+  padding: 10px 10px;
+  margin-left: 20px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #000;
+}
+
+.elements .center .uploaded-div .title span input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 300px;
+}
+
+.elements .center .uploaded-div .title h2 {
+  margin-right: 20px;
+}
+
+.elements .center .uploaded-div .table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.elements .center .uploaded-div .table .table-datas {
+  width: 200px;
+  height: 210px;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  background: var(--c6);
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px 0 #000;
+          box-shadow: 2px 2px 5px 0 #000;
+}
+
+.elements .center .uploaded-div .table .table-datas .info {
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  background: var(--c5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.elements .center .uploaded-div .table .table-datas .info p {
+  margin: 0px 0 10px 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.elements .center .uploaded-div .table .table-datas .info .drop {
+  z-index: 3;
+}
+
+.elements .center .uploaded-div .table .table-datas .info i {
+  font-style: inherit;
+  font-family: sans-serif;
+}
+
+.elements .center .uploaded-div .table .table-datas .info a {
+  float: right;
+}
+
+.elements .center .uploaded-div .table .table-datas .info .drop {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.elements .center .help-div {
+  width: 90%;
+  height: 90%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background: var(--c5);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  -webkit-box-shadow: 2px 2px 10px #000;
+          box-shadow: 2px 2px 10px #000;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  overflow-Y: scroll;
+  overflow-X: hidden;
+}
+
+.elements .center .help-div .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 15px 10px;
+  border-bottom: 2px solid #222;
+}
+
+.elements .center .help-div .border-bottom {
+  border-bottom: 2px solid #222;
+  padding-bottom: 10px;
+}
+
+.elements .center .help-div h3 {
+  margin: 10px;
+}
+
+.elements .center .help-div p {
+  margin-top: 10px;
+}
+
+.elements .center .help-div2 {
+  width: 90%;
+  height: 90%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00000000), to(#0aaaaaaa));
+  background: linear-gradient(#00000000, #0aaaaaaa);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  -webkit-box-shadow: 2px 2px 10px #000;
+          box-shadow: 2px 2px 10px #000;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-Y: scroll;
+  overflow-X: hidden;
+}
+
+.elements .center .help-div2 .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  padding: 15px 10px;
+  border-bottom: 2px solid var(--c6);
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.elements .center .help-div2 .title span {
+  background: var(--c5);
+  padding: 10px 10px;
+  margin-left: 20px;
+  color: #000;
+}
+
+.elements .center .help-div2 .title span input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 300px;
+}
+
+.elements .center .help-div2 .title h2 {
+  margin-right: 20px;
+}
+
+.elements .center .help-div2 .table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.elements .center .help-div2 .table .table-datas {
+  width: 100%;
+  height: 100px;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  background: var(--c6);
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px 0 #000;
+          box-shadow: 2px 2px 5px 0 #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.elements .center .help-div2 .table .table-datas .info {
+  width: 90%;
+  padding: 10px 10px 10px 10px;
+  background: var(--c5);
+  -webkit-box-shadow: 2px 3px 5px 0 #000 inset;
+          box-shadow: 2px 3px 5px 0 #000 inset;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.elements .center .help-div2 .table .table-datas .info p {
+  margin: 0px 0 10px 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.elements .center .help-div2 .table .table-datas .info i {
+  font-style: inherit;
+  font-family: sans-serif;
+}
+
+.elements .center .help-div2 .table .table-datas .info a {
+  float: right;
+}
+
+.elements .center .add-staff {
+  width: 90%;
+  height: 90%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00000000), to(#0aaaaaaa));
+  background: linear-gradient(#00000000, #0aaaaaaa);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  -webkit-box-shadow: 2px 2px 10px #000;
+          box-shadow: 2px 2px 10px #000;
+  text-align: center;
+  overflow-Y: scroll;
+  overflow-X: hidden;
+  display: none;
+  color: #fff;
+}
+
+.elements .center .add-staff .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #fff;
+  padding: 15px 10px;
+  border-bottom: 2px solid var(--c6);
+}
+
+.elements .center .add-staff .form-box {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  -webkit-transform: translate(-65%, -50%);
+          transform: translate(-65%, -50%);
+}
+
+.elements .center .add-staff .border-bottom {
+  border-bottom: 2px solid var(--c6);
+  padding-bottom: 10px;
+}
+
+.elements .center .add-staff h3 {
+  margin: 10px;
+}
+
+.elements .center .add-staff p {
+  margin-top: 10px;
+}
+
+.elements .center .setting-div {
+  width: 90%;
+  height: 90%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background: transparent;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.elements .center .setting-div .set-mini {
+  width: 100%;
+  margin-top: 70px;
+}
+
+.elements .center .setting-div section {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.elements .center .setting-div .change-password {
+  width: 250px;
+  padding: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00000000), to(#0aaaaaaa));
+  background: linear-gradient(#00000000, #0aaaaaaa);
+  cursor: pointer;
+  text-align: center;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  border-radius: 10px;
+}
+
+.elements .center .setting-div .change-password h1 {
+  font-size: 60px;
+  color: var(--c5);
+}
+
+.elements .center .setting-div .change-password p {
+  color: var(--c5);
+  margin-top: 30px;
+}
+
+.elements .center .setting-div .form-group {
+  padding: 20px;
+  width: 100%;
+}
+
+.elements .center .setting-div .form-group label {
+  font-size: 25px;
+  color: black;
+}
+
+.elements .center .setting-div .form-group .form-control {
+  padding: 10px 0 20px 0;
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #fff;
+}
+
+.elements .center .setting-div .form-group .form-control1 {
+  width: 100%;
+  padding: 20px;
+}
+
+.elements .center .setting-div .form-group .hinput {
+  width: 100%;
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid #222;
+}
+
+.elements .center .setting-div button {
+  margin: auto;
+  display: block;
+  background: #009578;
+  border-radius: 5px;
+  width: 120px;
+  color: #fff !important;
+  padding: 15px 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  border: none;
+  -webkit-box-shadow: 1px 1px 8px #ffffff33;
+          box-shadow: 1px 1px 8px #ffffff33;
+  outline: none;
+}
+
+.a {
+  padding: 10px;
+  background: var(--c2);
+  border-radius: 5px;
+  color: var(--c5);
+}
+
+@media screen and (max-width: 536px) {
+  .uploaded-div table th:nth-child(2) {
+    display: none;
+  }
+  .uploaded-div table td:nth-child(2) {
+    display: none;
+  }
+  .inner-dashboard {
+    width: 0%;
+  }
+  .elements {
+    width: 100%;
+  }
+  .elements nav section {
+    width: 80%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%;
+  }
+  .elements nav section h1 {
+    margin: auto 20px;
+    font-size: 25px;
+    display: block;
+  }
+  .elements nav section #closeNav {
+    display: none;
+  }
+  .elements nav section div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 0;
+  }
+  .elements .center {
+    width: 100%;
+  }
+  .elements .center .uploaded-div {
+    width: 100%;
+  }
+  .elements .center .wrapper-div {
+    width: 100%;
+  }
+  .elements .center .wrapper-div .wrapper {
+    width: 300px;
+  }
+  .elements .center .help-div {
+    width: 80%;
+  }
+  .elements .center .help2-div {
+    width: 80%;
+  }
+  .elements .center .uploaded-div {
+    width: 80%;
+  }
+  .elements .center .setting-div {
+    width: 100%;
+  }
+  .elements .center .setting-div .change-password {
+    width: 150px;
+  }
+  .elements .center .setting-div .change-password h1 {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=usersdashboard.css.map */

@@ -1,0 +1,335 @@
+body {
+  overflow: hidden;
+  background-color: var(--c1);
+  background-image: linear-gradient(315deg, var(--c1) 0%, #14557b 74%);
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.nav #open {
+  display: none;
+}
+
+.nav #close {
+  display: none;
+}
+
+nav {
+  margin: 20px 0;
+  color: #fff;
+  padding: 0 20px;
+}
+
+nav .nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .nav .nav-main i {
+  font-size: 50px;
+  color: var(--c5);
+  margin: 0 0 0 10px;
+}
+
+nav .nav h1 {
+  margin: 20px 0px 0px 10px;
+}
+
+.logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.logo svg {
+  width: 50px;
+  margin: 10px;
+}
+
+.logo h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-links {
+  margin-top: 0px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-family: sans-serif;
+  margin: 0px 10px;
+}
+
+.nav-links h1 {
+  cursor: pointer;
+}
+
+.all {
+  margin-top: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.all .text {
+  text-align: center;
+  color: #fff;
+  width: 45%;
+}
+
+.all .text .wrapper-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.all .text h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 50px;
+}
+
+.all .text p {
+  font-family: sans-serif;
+}
+
+.all .svg {
+  width: 50%;
+  margin: 0;
+}
+
+.all .svg svg {
+  width: 100%;
+  height: 100%;
+}
+
+.flexi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.side-bar {
+  width: 5%;
+  height: 92%;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--c1)), to(#00000729));
+  background: linear-gradient(var(--c1), #00000729);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  position: absolute;
+  right: -80px;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+.side-bar .social-links {
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.side-bar .useful-links {
+  text-align: center;
+  position: absolute;
+  bottom: 60px;
+}
+
+.side-bar .social-links img, .side-bar .useful-links img {
+  width: 40px;
+  margin: 5px auto;
+  cursor: pointer;
+}
+
+.bubbles {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  bottom: -70px;
+}
+
+.bubbles img {
+  width: 50px;
+  -webkit-animation: bubble 7s linear infinite;
+          animation: bubble 7s linear infinite;
+}
+
+@-webkit-keyframes bubble {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-80vh);
+            transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+
+@keyframes bubble {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-80vh);
+            transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+
+.bubbles img:nth-child(1) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.bubbles img:nth-child(2) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.bubbles img:nth-child(3) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.bubbles img:nth-child(4) {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+.bubbles img:nth-child(5) {
+  -webkit-animation-delay: 3.1s;
+          animation-delay: 3.1s;
+}
+
+.bubbles img:nth-child(6) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.bubbles img:nth-child(7) {
+  -webkit-animation-delay: 6.5s;
+          animation-delay: 6.5s;
+}
+
+.file-text {
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 850px) {
+  .nav {
+    display: block;
+    z-index: 10;
+    background: var(--c5);
+    -webkit-box-shadow: 1px 2px 8px 0px #000;
+            box-shadow: 1px 2px 8px 0px #000;
+    position: absolute;
+  }
+  .nav aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav #open {
+    display: block;
+    margin: auto 0;
+    font-size: 35px;
+  }
+  .nav #close {
+    display: none;
+    margin: auto 0;
+    font-size: 35px;
+  }
+  .nav nav {
+    -webkit-box-shadow: block;
+            box-shadow: block;
+    display: none;
+  }
+  .nav nav .nav-links {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .nav nav .nav-links a {
+    display: block;
+    margin-top: 20px;
+    font-size: 25px;
+    color: #000;
+  }
+  .nav nav .nav-links .nav-main {
+    display: block;
+  }
+  .all {
+    margin: 0;
+  }
+  .all .flexi {
+    display: block;
+    padding: 100px 0 50px 0;
+    margin-bottom: 100%;
+  }
+  .all .flexi .text {
+    width: 90%;
+  }
+  .all .flexi .text h1 {
+    font-size: 25px;
+  }
+  .all .flexi .text p {
+    width: 100%;
+  }
+  .all .flexi .svg {
+    width: 100%;
+    margin: 0;
+    display: none;
+  }
+  .all .flexi .side-bar {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */
